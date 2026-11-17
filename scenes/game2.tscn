@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ckg4isy2vkewp"]
+
+[ext_resource type="Script" uid="uid://da7luewrvvpox" path="res://assets/scripts/main.gd" id="1_7pxbb"]
+[ext_resource type="Script" uid="uid://cd2otwefpgy83" path="res://assets/scripts/character.gd" id="2_u48pd"]
+
+[node name="Main" type="Node" unique_id=11529365 node_paths=PackedStringArray("character_to_kill", "node")]
+script = ExtResource("1_7pxbb")
+character_to_kill = NodePath("CharacterNode")
+node = NodePath("Playerski")
+unit_alignment = 2
+
+[node name="CharacterNode" type="Node" parent="." unique_id=1949220672]
+script = ExtResource("2_u48pd")
+profession = "Potion Seller"
+health = 40
+
+[node name="CharacterNode2" type="Node" parent="." unique_id=1529930278]
+script = ExtResource("2_u48pd")
+profession = "Ex-Adventurer"
+health = 30
+
+[node name="CharacterNode3" type="Node" parent="." unique_id=573746040]
+script = ExtResource("2_u48pd")
+profession = "Knight"
+health = 150
+
+[node name="Button" type="Button" parent="." unique_id=1019511116]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -41.5
+offset_top = 365.0
+offset_right = 41.5
+offset_bottom = 396.0
+grow_horizontal = 2
+text = "dont click"
+
+[node name="Label" type="Label" parent="." unique_id=1312188576]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -242.0
+offset_top = -35.0
+offset_right = 242.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "this is not a skibidi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Playerski" type="Node2D" parent="." unique_id=1293857297]
+
+[node name="Timer" type="Timer" parent="." unique_id=1275261569]
+autostart = true
+
+[connection signal="health_changed" from="." to="." method="_on_health_changed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
