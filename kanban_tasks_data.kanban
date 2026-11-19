@@ -1,0 +1,50 @@
+{
+	"categories": [
+		{
+			"uuid": "7d28583c-bc1f-4b3e-873c-3b3e63dd7094",
+			"title": "Task",
+			"color": "3daee9"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "3d1e79f3-ebbd-4a29-bae2-2309a7b7313b",
+			"title": "Todo",
+			"tasks": []
+		},
+		{
+			"uuid": "c381ea52-6074-4206-a23b-ce25096e2c46",
+			"title": "Doing",
+			"tasks": [
+				"99b9bd29-a5c0-45a3-a9b5-5570a36432a1"
+			]
+		},
+		{
+			"uuid": "92523d6b-a929-4ade-9a9a-95d6fb6aecb1",
+			"title": "Done",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "99b9bd29-a5c0-45a3-a9b5-5570a36432a1",
+			"title": "farting",
+			"description": "",
+			"category": "7d28583c-bc1f-4b3e-873c-3b3e63dd7094",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"3d1e79f3-ebbd-4a29-bae2-2309a7b7313b"
+			],
+			[
+				"c381ea52-6074-4206-a23b-ce25096e2c46"
+			],
+			[
+				"92523d6b-a929-4ade-9a9a-95d6fb6aecb1"
+			]
+		]
+	}
+}
